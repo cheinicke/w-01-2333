@@ -52,7 +52,7 @@ fi
 done < $file
 IFS=$OIFS
 
-sudo chown -R www-data:www-data /home/pi/RPi-Jukebox-RFID/shared/audiofolders/
-sudo chmod -R 777 /home/pi/RPi-Jukebox-RFID/shared/audiofolders/
-sudo chown -R www-data:www-data /home/pi/RPi-Jukebox-RFID/shared/shortcuts/
-sudo chmod -R 777 /home/pi/RPi-Jukebox-RFID/shared/shortcuts/
+sudo chown -R pi:www-data /home/pi/RPi-Jukebox-RFID/shared/audiofolders/
+sudo chmod -R 775 /home/pi/RPi-Jukebox-RFID/shared/audiofolders/
+sudo chown www-data:www-data /home/pi/RPi-Jukebox-RFID/shared/shortcuts/*
+sudo chmod 777 /home/pi/RPi-Jukebox-RFID/shared/shortcuts/*
